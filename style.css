@@ -8,34 +8,40 @@
 
 body {
   background-color: #f2ebe3;
+  min-height: 100vh;
 }
 
 main {
   background-color: #ffffff;
-  width: 50%;
-  margin: 0 auto;
+  width: 350px;
+  margin: 2em auto;
   border-radius: 15px;
 }
 button {
   border: none;
 }
 .wrapper {
-  margin: 50 60;
+  /* margin: 50 60; */
 }
 
 .design {
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-bottom: 30px;
+  padding: 16px;
 }
 
 img {
   max-width: 100%;
 }
 
+.desktop-hero {
+  display: none;
+}
+
+.mobile-hero {
+  border-radius: 15px 15px 0 0;
+}
+
 .pre {
   color: #6c7289;
-  padding: 20px;
   letter-spacing: 7px;
   font-family: "montserrat";
 }
@@ -62,8 +68,7 @@ img {
 .price {
   display: flex;
   align-items: center;
-  margin-top: 20px;
-  margin-bottom: 25px;
+  margin: 20px 0;
   gap: 1em;
 }
 
@@ -102,10 +107,30 @@ img {
   color: hsl(228, 45%, 44%);
 }
 
-@media (min-width) {
+@media (min-width: 500px) {
   main {
-    background-color: #ffffff;
-    margin: 0 auto;
+    width: 600px;
+    height: 450px;
+    margin: 5em auto;
     border-radius: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .design {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    border-radius: 0;
+    border-radius: 0 15px 15px 0;
+  }
+
+  .desktop-hero {
+    display: block;
+    border-radius: 15px 0 0 15px;
+  }
+
+  .mobile-hero {
+    display: none;
   }
 }
