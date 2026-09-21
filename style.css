@@ -8,7 +8,6 @@
 
 body {
   background-color: #f2ebe3;
-  font-family: "Fraunces";
 }
 
 main {
@@ -35,34 +34,44 @@ img {
 }
 
 .pre {
-  color: #f2ebe3;
+  color: #6c7289;
   padding: 20px;
+  letter-spacing: 7px;
+  font-family: "montserrat";
 }
 
-.prefume {
+.perfume {
   font-weight: 800;
   margin-bottom: 20px;
+  font-family: "Fraunces";
 }
 
 .about {
   line-height: 25px;
-  color: #f2ebe3;
+  color: #6c7289;
+  font-family: "montserrat";
 }
 
 .new-price {
-  color: #1b4133;
-  font-size: 50px;
+  color: #3c8067;
+  font-size: 1.8em;
+  font-family: "fraunces";
+  font-weight: 700;
 }
 
 .price {
   display: flex;
   align-items: center;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  gap: 1em;
 }
 
 .old-price {
   text-decoration: line-through;
-  color: #f2ebf2;
+  color: #6c7289;
   text-align: center;
+  font-family: "montserrat";
 }
 
 .btn-cart {
@@ -77,9 +86,7 @@ img {
   justify-content: center;
   align-items: center;
   gap: 1em;
-}
-
-.cart-icon {
+  font-family: "montserrat";
 }
 
 .btn-cart:hover,
