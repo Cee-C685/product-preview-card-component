@@ -1,0 +1,104 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f2ebe3;
+  font-family: "Fraunces";
+}
+
+main {
+  background-color: #ffffff;
+  width: 50%;
+  margin: 0 auto;
+  border-radius: 15px;
+}
+button {
+  border: none;
+}
+.wrapper {
+  margin: 50 60;
+}
+
+.design {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.pre {
+  color: #f2ebe3;
+  padding: 20px;
+}
+
+.prefume {
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.about {
+  line-height: 25px;
+  color: #f2ebe3;
+}
+
+.new-price {
+  color: #1b4133;
+  font-size: 50px;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: #f2ebf2;
+  text-align: center;
+}
+
+.btn-cart {
+  cursor: pointer;
+  background-color: #3c8067;
+  color: #ffffff;
+  border-radius: 5px;
+  /* margin: 20px; */
+  padding: 20px 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+.cart-icon {
+}
+
+.btn-cart:hover,
+.btn-cart:active {
+  background-color: #1b4133;
+}
+
+.attribution {
+  font-size: 0.6875rem;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width) {
+  main {
+    background-color: #ffffff;
+    margin: 0 auto;
+    border-radius: 15px;
+  }
+}
